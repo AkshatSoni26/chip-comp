@@ -95,10 +95,6 @@ function InputField() {
                     selectedNames.length > 0 &&
                     <>
                         {selectedNames.map((selectedName, index) => (
-                            // <div key={index} className={`selected-name ${(selectedNames.length - 1 == index) && (backspacePressed == 1) && "highlight-item"}`} >
-                            //     {selectedName.name} &nbsp; <span onClick={() => AddBackToList(selectedName)}>X</span>
-                            // </div>
-
                             <div key={index} className={`selected-name ${(selectedNames.length - 1 == index) && (backspacePressed == 1) && "highlight-item"}`} >
                                 <img src={image} alt='' />
                                 <div style={{margin:'8px'}}> {selectedName.name} </div>
